@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jasa angkut barang super – Super Rapih, Super Cepat, Superman!</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(180deg, #d4fdd6, #ffffff);
+      text-align: center;
+      margin: 0;
+      padding: 30px;
+    }
+    .logo {
+      width: 120px;
+      margin-bottom: 15px;
+    }
+    h1 {
+      font-size: 26px;
+      margin: 10px 0;
+      color: #2b7a2b;
+    }
+    p {
+      color: #444;
+      margin-bottom: 25px;
+    }
+    .link {
+      display: block;
+      text-decoration: none;
+      background: #2b7a2b;
+      color: white;
+      padding: 15px;
+      margin: 10px auto;
+      width: 80%;
+      max-width: 350px;
+      border-radius: 12px;
+      font-size: 16px;
+      font-weight: bold;
+      transition: all 0.2s ease-in-out;
+    }
+    .link:hover {
+      background: #1e551e;
+      transform: scale(1.03);
+    }
+    footer {
+      margin-top: 40px;
+      font-size: 13px;
+      color: #666;
+    }
+
+body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
+    h1 { color: #2e7d32; }
+    .calc-box { 
+      max-width: 400px; margin: auto; padding: 20px; 
+      border: 1px solid #ddd; border-radius: 10px; 
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    input { width: 90%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px; }
+    button { background: #2e7d32; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; }
+    button:hover { background: #1b5e20; }
+    .result { margin-top: 20px; font-size: 18px; font-weight: bold; }
+  </style>
+</head>
+<body>
+
+  <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsZHag046h9AAdaG6BsCU3TSoJ1RIT4DIn5g&s" alt="Logo Beresin" class="logo">
+  <h1><strong>JARUMSUPER</h1></strong>
+  <h1>Jasa angkut barang rumahan super</h1>
+  <p>Super Rapih, Super Cepat, Superman!</p>
+
+  <a href="https://wa.me/6282121171931" class="link">🚚 Pesan Pickup / Engkel</a>
+  <a href="https://instagram.com/beresin.indonesia" class="link">📸 Instagram</a>
+  <a href="https://youtube.com/cocomelon" class="link">🌐 Youtube</a>
+<h1>Kalkulator Tarif <strong>JARUMSUPER</strong></h1>
+  <p>Masukkan estimasi jarak perjalanan untuk menghitung biaya cepat.</p>
+
+  <div class="calc-box">
+    <label>Jarak (km):</label><br>
+    <input type="number" id="jarak" placeholder="contoh: 25"><br>
+    <button onclick="hitungTarif()">Hitung Tarif</button>
+
+    <div class="result" id="hasil"></div>
+  </div>
+<script>
+    function hitungTarif() {
+      let jarak = document.getElementById("jarak").value;
+      if (jarak <= 0 || jarak === "") {
+        document.getElementById("hasil").innerHTML = "⚠️ Masukkan jarak yang valid!";
+        return;
+      }
+      let pickup = jarak * 5000;
+      let engkel = jarak * 8000;
+      document.getElementById("hasil").innerHTML = `
+        🚚 Pickup: Rp ${pickup.toLocaleString()} <br>
+        🚛 Engkel: Rp ${engkel.toLocaleString()}
+      `;
+    }
+  </script>
+
+  <footer>© 2025 Beresin Indonesia</footer>
+
+</body>
+</html>
