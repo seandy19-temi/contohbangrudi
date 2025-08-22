@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BERESIN – Jasa Antar Barang (Pickup & Engkel)</title>
+  <meta name="description" content="Layanan antar barang cepat & terpercaya dengan armada Pickup dan Engkel. Pesan mudah via WhatsApp. Dalam kota & luar kota." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root{
+      --green:#2ecc71; /* hijau daun */
+      --dark:#0f172a;  /* slate-900 */
+      --muted:#64748b; /* slate-500 */
+      --bg:#0b1020;    /* deep bg */
+      --card:#121833;  /* card bg */
+      --ring:#dbeafe;  /* ring */
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:#e5e7eb;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1100px;margin:0 auto;padding:0 20px}
+    .grid{display:grid;gap:24px}
+    .btn{display:inline-flex;align-items:center;gap:10px;background:var(--green);color:#0b1020;padding:14px 20px;border-radius:14px;font-weight:800;letter-spacing:.3px;border:0;box-shadow:0 10px 30px rgba(46,204,113,.25);transition:transform .15s ease,box-shadow .15s ease}
+    .btn:hover{transform:translateY(-1px);box-shadow:0 14px 40px rgba(46,204,113,.35)}
+    .btn-outline{background:transparent;border:1.5px solid #22c55e;color:#c7f9d4}
+    .pill{display:inline-block;background:rgba(46,204,113,.12);color:#d1fae5;border:1px solid rgba(46,204,113,.35);padding:6px 12px;border-radius:999px;font-size:12px;font-weight:700;letter-spacing:.4px}
+    header{position:sticky;top:0;backdrop-filter:saturate(120%) blur(8px);background:rgba(11,16,32,.6);border-bottom:1px solid rgba(226,232,240,.06);z-index:10}
+    nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+    nav .brand{display:flex;align-items:center;gap:10px;font-weight:800}
+    nav .brand .logo{width:34px;height:34px;background:var(--green);border-radius:10px;display:grid;place-items:center;box-shadow:0 6px 20px rgba(46,204,113,.35)}
+    /* simple B mark */
+    .logo svg{width:22px;height:22px;fill:#0b1020}
+    .hero{padding:72px 0 36px}
+    .hero-inner{display:grid;gap:28px;grid-template-columns:1.1fr .9fr;align-items:center}
+    .hero h1{font-size: clamp(28px, 4vw, 46px); line-height:1.05;margin:8px 0 10px;color:#f8fafc}
+    .hero p{color:#cbd5e1;font-size: clamp(14px, 1.8vw, 18px)}
+    .hero-card{background:linear-gradient(180deg, rgba(18,24,51,1) 0%, rgba(18,24,51,.6) 100%);border:1px solid rgba(226,232,240,.08);padding:18px;border-radius:18px}
+    .hero .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:14px}
+    .badges{display:flex;gap:10px;flex-wrap:wrap;margin-top:6px}
+
+    section{padding:52px 0;border-top:1px solid rgba(226,232,240,.06)}
+    h2{font-size: clamp(22px, 3.2vw, 32px);margin:0 0 8px}
+    .muted{color:var(--muted)}
+
+    .cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+    .card{background:var(--card);border:1px solid rgba(226,232,240,.08);border-radius:16px;padding:18px}
+    .card h3{margin:6px 0 8px;font-size:18px}
+    .price{font-weight:800;font-size:22px;color:#f8fafc}
+    .feature{display:flex;gap:10px;align-items:flex-start;color:#cbd5e1}
+    .feature svg{flex:0 0 18px}
+
+    .how{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+    .step{background:var(--card);border:1px solid rgba(226,232,240,.08);border-radius:16px;padding:18px}
+    .step .num{width:32px;height:32px;border-radius:10px;background:rgba(46,204,113,.15);display:grid;place-items:center;color:#86efac;font-weight:800;margin-bottom:8px}
+
+    .footer{padding:34px 0;color:#94a3b8}
+
+    @media (max-width: 920px){
+      .hero-inner{grid-template-columns:1fr}
+      .cards{grid-template-columns:1fr}
+      .how{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="brand">
+          <div class="logo" aria-label="Logo Beresin">
+            <svg viewBox="0 0 64 64" aria-hidden="true">
+              <path d="M14 19h16c9 0 15 5 15 12 0 5-3 9-8 11 3 2 5 5 5 9 0 8-8 12-18 12H14l8-9h5c6 0 9-2 9-5 0-3-3-4-9-4H22l8-9h8c5 0 8-2 8-5s-3-5-8-5H22l-8-7z" />
+            </svg>
+          </div>
+          <span>BERESIN</span>
+        </div>
+        <a class="btn" href="https://wa.me/6282121171931?text=Halo%20Beresin%2C%20saya%20butuh%20jasa%20antar%20barang" target="_blank" rel="noopener">Pesan via WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <span class="pill">Pickup & Engkel • Dalam & Luar Kota</span>
+          <h1>Jasa Antar Barang yang <span style="color:var(--green)">Cepat</span>, <span style="color:var(--green)">Rapi</span>, dan <span style="color:var(--green)">Terpercaya</span>.</h1>
+          <p>Solusi pengiriman untuk UMKM, pindahan, dan distribusi. Armada terawat, driver profesional, dan harga transparan. Tinggal chat, kami beresin.</p>
+          <div class="cta">
+            <a class="btn" href="https://wa.me/6282121171931?text=Halo%20Beresin%2C%20mohon%20quotation%20antar%20barang" target="_blank" rel="noopener">Minta Penawaran</a>
+            <a class="btn btn-outline" href="#harga">Lihat Harga</a>
+          </div>
+          <div class="badges">
+            <span class="pill">Respon cepat</span>
+            <span class="pill">Pembayaran QRIS</span>
+            <span class="pill">Tracking koordinasi WA</span>
+          </div>
+        </div>
+        <div class="hero-card">
+          <img alt="Ilustrasi armada pickup & engkel" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsZHag046h9AAdaG6BsCU3TSoJ1RIT4DIn5g&s,<?xml version='1.0' encoding='UTF-8'?><svg xmlns='http://www.w3.org/2000/svg' width='900' height='540'><defs><linearGradient id='g' x1='0' x2='1'><stop offset='0' stop-color='%23121833'/><stop offset='1' stop-color='%23121833'/></linearGradient></defs><rect fill='url(%23g)' width='100%' height='100%'/><g fill='%232ecc71' opacity='0.9'><rect x='80' y='140' rx='14' ry='14' width='420' height='160'/><rect x='120' y='300' width='360' height='26' rx='13'/><rect x='520' y='210' width='260' height='90' rx='14'/><circle cx='200' cy='360' r='36'/><circle cx='430' cy='360' r='36'/></g><text x='80' y='120' fill='%23cbd5e1' font-family='Inter' font-size='22'>Ilustrasi Armada (Placeholder)</text></svg>" style="width:100%;height:auto;border-radius:14px;border:1px solid rgba(226,232,240,.06)"/>
+        </div>
+      </div>
+    </section>
+
+    <section id="layanan">
+      <div class="container">
+        <h2>Layanan & Armada</h2>
+        <p class="muted">Sesuaikan kebutuhan pengiriman Anda. Kami siapkan armada terbaik.</p>
+        <div class="cards" style="margin-top:14px">
+          <div class="card">
+            <h3>Pickup (≤ 1 Ton)</h3>
+            <p class="muted">Cocok untuk barang ringan–menengah, kurir partai, dan kiriman dalam kota.</p>
+            <div class="feature"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M9 12l2 2 4-4 1.4 1.4L11 16 7.6 12.6 9 11z"/></svg> Bak terbuka, proses muat bongkar cepat.</div>
+            <div class="feature"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M9 12l2 2 4-4 1.4 1.4L11 16 7.6 12.6 9 11z"/></svg> Dalam & luar kota.</div>
+          </div>
+          <div class="card">
+            <h3>Engkel Box (≤ 2.5 Ton)</h3>
+            <p class="muted">Aman untuk volume besar, barang bernilai, dan distribusi antarkota.</p>
+            <div class="feature"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M9 12l2 2 4-4 1.4 1.4L11 16 7.6 12.6 9 11z"/></svg> Box tertutup melindungi dari cuaca.</div>
+            <div class="feature"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M9 12l2 2 4-4 1.4 1.4L11 16 7.6 12.6 9 11z"/></svg> Sopir berpengalaman & ramah.</div>
+          </div>
+          <div class="card">
+            <h3>Layanan Tambahan</h3>
+            <p class="muted">Opsional sesuai kebutuhan pengiriman Anda.</p>
+            <div class="feature"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M9 12l2 2 4-4 1.4 1.4L11 16 7.6 12.6 9 11z"/></svg> Tenaga angkut bantu muat/bongkar.</div>
+            <div class="feature"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M9 12l2 2 4-4 1.4 1.4L11 16 7.6 12.6 9 11z"/></svg> Pembayaran QRIS / Transfer.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="harga">
+      <div class="container">
+        <h2>Harga Transparan</h2>
+        <p class="muted">Contoh harga dasar. Dapatkan penawaran pasti lewat WhatsApp.</p>
+        <div class="cards" style="margin-top:14px">
+          <div class="card">
+            <h3>Dalam Kota</h3>
+            <p class="price">Mulai Rp 200.000 / trip</p>
+            <p class="muted">Termasuk sopir & BBM standar. Parkir & tol mengikuti real.</p>
+            <a class="btn" href="https://wa.me/6282121171931?text=Halo%20Beresin%2C%20mohon%20harga%20dalam%20kota">Chat Kami</a>
+          </div>
+          <div class="card">
+            <h3>Antarkota</h3>
+            <p class="price">By Quote / km</p>
+            <p class="muted">Hitung jarak, beban, dan tipe armada. Dapatkan penawaran tercepat.</p>
+            <a class="btn" href="https://wa.me/6282121171931?text=Halo%20Beresin%2C%20mohon%20quotation%20antarkota">Minta Quote</a>
+          </div>
+          <div class="card">
+            <h3>Pindahan</h3>
+            <p class="price">Paket Hemat</p>
+            <p class="muted">Termasuk tenaga angkut. Survey virtual gratis via WA video.</p>
+            <a class="btn" href="https://wa.me/6282121171931?text=Halo%20Beresin%2C%20pindahan%20rumah%2Fkanto%20butuh%20estimasi">Jadwalkan</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="alur">
+      <div class="container">
+        <h2>Alur Pemesanan</h2>
+        <p class="muted">Simple, semua lewat WhatsApp.</p>
+        <div class="how" style="margin-top:14px">
+          <div class="step">
+            <div class="num">1</div>
+            <h3>Chat Kami</h3>
+            <p class="muted">Kirim detail barang, lokasi jemput & antar, tanggal dan jam.</p>
+          </div>
+          <div class="step">
+            <div class="num">2</div>
+            <h3>Dapatkan Penawaran</h3>
+            <p class="muted">Kami kirim harga & ketersediaan armada. Konfirmasi booking.</p>
+          </div>
+          <div class="step">
+            <div class="num">3</div>
+            <h3>Armada Berangkat</h3>
+            <p class="muted">Driver datang sesuai jadwal. Koordinasi real-time via WA.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container" style="display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between">
+      <div>© <span id="year"></span> BERESIN • Jasa Antar Barang</div>
+      <div style="display:flex;gap:10px;align-items:center">
+        <a class="pill" href="https://wa.me/6282121171931" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="pill" href="#" aria-disabled="true">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
