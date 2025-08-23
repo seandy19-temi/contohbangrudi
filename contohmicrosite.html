@@ -3,21 +3,21 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>JARUMSUPER</title>
+  <title>MAZEL</title>
   <style>
     body {
       margin: 0; font-family: Arial, sans-serif;
       display: flex; flex-direction: column; align-items: center;
-      background: #111827; color: #f9fafb;
+      background: linear-gradient(180deg, #4a4d49, #ffffff);
       min-height: 100vh; padding: 20px;
     }
     .avatar {
       width: 100px; height: 100px; border-radius: 50%;
-      background: #06b6d4; display: flex; align-items: center; justify-content: center;
+      background: linear-gradient(180deg, #4a4d49, #ffffff); display: flex; align-items: center; justify-content: center;
       font-size: 40px; font-weight: bold; margin-top: 40px;
     }
-    h1 { margin: 15px 0 5px; font-size: 22px; }
-    p.tag { margin: 0 0 25px; font-size: 14px; color: #9ca3af; }
+    h1 { margin: 15px 0 5px; font-size: 28px; }
+    p.tag { margin: 0 0 25px; font-size: 18px; color: #0a0a0a; }
     .link {
       width: 100%; max-width: 400px;
       display: block; text-align: center; text-decoration: none;
@@ -40,14 +40,27 @@
   <div class="avatar">
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsZHag046h9AAdaG6BsCU3TSoJ1RIT4DIn5g&s" alt="Logo JARUMSUPER">
 </div>
-  <h1>JARUMSUPER</h1>
-  <p class="tag">Jasa Antar Barang Rumah • Cepat & Aman</p>
+  <h1>MAZEL</h1>
+  <p class="tag">Jasa Antar Barang Rumah • Cepat, Aman, dan Layanan oke!</p>
 
-  <a class="link" href="https://wa.me/6281234567890">📦 Pesan via WhatsApp</a>
-  <a class="link" href="#tarif">💰 Cek Tarif & Layanan</a>
-  <a class="link" href="#tracking">📍 Tracking & Jadwal</a>
-  <a class="link" href="mailto:halo@jarumsuper.id">✉️ Kontak & Feedback</a>
+  <a class="link" id="whatsappLink" href="https://wa.me/6281319699718?text=Hai, saya ingin pesan mobil untuk antar barang saya dong." onclick="kirimKeWhatsApp()" target="_blank">💬 Hubungi via WhatsApp</a>
+  <a class="link" href="#">Galery</a>
+  <a class="link" href="#">Facebook</a>
 
-  <footer>© 2025 JARUMSUPER • Powered by BERESIN</footer>
+    <h2 data-aos="fade-up">📍 Kontak & Lokasi</h2>
+    <p data-aos="fade-up">Kamu bisa datang langsung, hubungi via WhatsApp, atau kunjungi media sosial kami:</p>
+
+    <div data-aos="fade-up">
+      <iframe src="https://www.google.com/maps/embed?pb=!4v1755944235671!6m8!1m7!1st1od0TMQ-U4_oJpJNrGT_A!2m2!1d-6.160399747457111!2d106.8681486105863!3f241.83086!4f0!5f0.7820865974627469" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="footer-section" data-aos="fade-up" data-aos-delay="100" style="margin-top: 2rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem;">
+      <div>
+        <h4>Alamat</h4>
+        <p>Jl. Berlian Raya no 10 rt015/02 Sumur Batu, Kemayoran Jakarta Pusat, Indonesia</p>
+      </div>
+  </section>
+
+  <footer>© 2025 MAZEL • Powered by BERESIN</footer>
 </body>
 </html>
